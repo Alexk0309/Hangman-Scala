@@ -12,6 +12,7 @@ import scalafx.scene.text.Text
 import scalafx.stage.Stage
 
 @sfxml
+// Controller for HangGameOver.fxml
 class HangmanGameOverController(
     gameoverBG: ImageView,
     homeButton: Button,
@@ -19,12 +20,16 @@ class HangmanGameOverController(
     answerText: Text
 ) {
 
+    // Set to display total score value in Text object 
     var scoreDisplay = scoreText
     var answerDisplay = answerText
 
     var dialogStage: Stage = null
+
+    // Set background
     gameoverBG.image = new Image("file:resources/images/dead.jpg")
 
+    // Function to return to the main menu when player click the home button 
     def goHome(action : ActionEvent): Unit = {
         MainApp.showHomeScreen()
         dialogStage.close()
