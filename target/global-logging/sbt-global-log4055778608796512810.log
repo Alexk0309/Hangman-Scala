@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"115","parents":[]},"eventTime":1657739547594,"message":"Compiling hangman","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/MainApp.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HangmanEndController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HangmanGameController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HangmanGameOverController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HomeScreenController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/model/Word.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"115","parents":[]},"eventTime":1657739547604,"message":"Compiled hangman","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"errors":0,"warnings":0,"time":10}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"116","parents":[]},"eventTime":1657739547609,"message":"Compiling hangman-test","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Test"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"116","parents":[]},"eventTime":1657739547619,"message":"Compiled hangman-test","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Test"},"errors":0,"warnings":0,"time":10}})[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jul 14, 2022 3:12:27 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (C:\Users\msi\Desktop\Hangman\target\scala-2.12\zinc\inc_compile_2.12.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jul 14, 2022 3:12:27 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

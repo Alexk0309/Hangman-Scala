@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.hangman.view.HangmanGameController">
+   <children>
+      <ImageView layoutX="-14.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://wallpaperbat.com/img/275589-brown-leather-wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="101.0" layoutY="369.0" prefHeight="209.0" prefWidth="686.0">
+         <children>
+            <Button fx:id="qKey" layoutX="14.0" mnemonicParsing="false" text="Q">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="oKey" layoutX="564.0" mnemonicParsing="false" text="O">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="iKey" layoutX="499.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="49.0" text="I">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="uKey" layoutX="429.0" mnemonicParsing="false" text="U">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="yKey" layoutX="364.0" mnemonicParsing="false" text="Y">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="tKey" layoutX="300.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="51.0" text="T">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="rKey" layoutX="230.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="55.0" text="R">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="wKey" layoutX="85.0" mnemonicParsing="false" text="W">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="eKey" layoutX="157.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="55.0" text="E">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="pKey" layoutX="632.0" mnemonicParsing="false" text="P">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="aKey" layoutX="30.0" layoutY="66.0" mnemonicParsing="false" text="A">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="sKey" layoutX="98.0" layoutY="66.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="50.0" text="S">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="dKey" layoutX="172.0" layoutY="66.0" mnemonicParsing="false" text="D">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="fKey" layoutX="245.0" layoutY="66.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="50.0" text="F">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="gKey" layoutX="315.0" layoutY="66.0" mnemonicParsing="false" text="G">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="hKey" layoutX="385.0" layoutY="66.0" mnemonicParsing="false" text="H">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="jKey" layoutX="456.0" layoutY="66.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="51.0" text="J">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="kKey" layoutX="525.0" layoutY="66.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="51.0" text="K">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="zKey" layoutX="71.0" layoutY="131.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="55.0" text="Z">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="147.0" layoutY="131.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="51.0" text="X" fx:id="xKey">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="cKey" layoutX="218.0" layoutY="131.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="55.0" text="C">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="vKey" layoutX="285.0" layoutY="131.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="55.0" text="V">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bKey" layoutX="360.0" layoutY="131.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="54.0" text="B">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="nKey" layoutX="426.0" layoutY="131.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="55.0" text="N">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="lKey" layoutX="590.0" layoutY="66.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="50.0" text="L">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="mKey" layoutX="498.0" layoutY="131.0" mnemonicParsing="false" text="M">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="81.0" layoutY="56.0" prefHeight="300.0" prefWidth="700.0">
+         <children>
+            <AnchorPane layoutX="76.0" layoutY="14.0" prefHeight="223.0" prefWidth="572.0">
+               <children>
+                  <ImageView fx:id="hangmanImage" fitHeight="230.0" fitWidth="246.0" layoutX="162.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="25.0" layoutY="237.0" prefHeight="51.0" prefWidth="661.0">
+               <children>
+                  <Text fx:id="hangmanText" fill="WHITE" layoutX="39.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="599.6708984375">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <MenuBar prefHeight="37.0" prefWidth="850.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem fx:id="homeButton" mnemonicParsing="false" onAction="#goHome" text="Home" />
+                  <MenuItem fx:id="quitButton" mnemonicParsing="false" onAction="#exitGame" text="Quit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

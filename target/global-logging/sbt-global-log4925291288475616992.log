@@ -1,0 +1,49 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"80","parents":[]},"eventTime":1657733244471,"message":"Compiling hangman","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\msi\Desktop\Hangman\target\scala-2.12\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to C:\\Users\\msi\\Desktop\\Hangman\\target\\scala-2.12\\classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/MainApp.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[{"range":{"start":{"line":47,"character":8},"end":{"line":47,"character":9}},"severity":1,"source":"sbt","message":"not found: value initModality"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\msi\Desktop\Hangman\src\main\scala\ch\makery\hangman\MainApp.scala:48:9: not found: value initModality[0m
+[0m[[0m[31merror[0m] [0m[0m        initModality(Modality.APPLICATION_MODAL)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"C:\\Users\\msi\\Desktop\\Hangman\\src\\main\\scala\\ch\\makery\\hangman\\MainApp.scala:48:9: not found: value initModality"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"        initModality(Modality.APPLICATION_MODAL)"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"        ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/MainApp.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[{"range":{"start":{"line":48,"character":8},"end":{"line":48,"character":9}},"severity":1,"source":"sbt","message":"not found: value initOwner"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\msi\Desktop\Hangman\src\main\scala\ch\makery\hangman\MainApp.scala:49:9: not found: value initOwner[0m
+[0m[[0m[31merror[0m] [0m[0m        initOwner(stage)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"C:\\Users\\msi\\Desktop\\Hangman\\src\\main\\scala\\ch\\makery\\hangman\\MainApp.scala:49:9: not found: value initOwner"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"        initOwner(stage)"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"        ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/MainApp.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[{"range":{"start":{"line":51,"character":20},"end":{"line":51,"character":21}},"severity":1,"source":"sbt","message":"type mismatch;\n found   : java.net.URL\n required: java.io.InputStream"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\msi\Desktop\Hangman\src\main\scala\ch\makery\hangman\MainApp.scala:52:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.net.URL[0m
+[0m[[0m[31merror[0m] [0m[0m required: java.io.InputStream[0m
+[0m[[0m[31merror[0m] [0m[0m        loader.load(resource);[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"C:\\Users\\msi\\Desktop\\Hangman\\src\\main\\scala\\ch\\makery\\hangman\\MainApp.scala:52:21: type mismatch;\n found   : java.net.URL\n required: java.io.InputStream"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"        loader.load(resource);"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"                    ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"80","parents":[]},"eventTime":1657733244815,"message":"Compiling hangman (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"80","parents":[]},"eventTime":1657733244815,"message":"Compiling hangman (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"three errors found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/MainApp.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[{"range":{"start":{"line":47,"character":8},"end":{"line":47,"character":9}},"severity":1,"source":"sbt","message":"not found: value initModality"},{"range":{"start":{"line":48,"character":8},"end":{"line":48,"character":9}},"severity":1,"source":"sbt","message":"not found: value initOwner"},{"range":{"start":{"line":51,"character":20},"end":{"line":51,"character":21}},"severity":1,"source":"sbt","message":"type mismatch;\n found   : java.net.URL\n required: java.io.InputStream"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/model/Word.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HangmanEndController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HangmanGameController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HomeScreenController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"80","parents":[]},"eventTime":1657733244823,"message":"Compiled hangman","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"errors":3,"warnings":0,"time":352}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Jul 14, 2022 1:27:24 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

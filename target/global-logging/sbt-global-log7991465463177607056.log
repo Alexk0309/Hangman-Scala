@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(bb61af80-7046-4297-b948-a85016084117), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"1","parents":[]},"eventTime":1657382619699,"message":"Compiling hangman","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/MainApp.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HomeScreenController.scala"},"buildTarget":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"1","parents":[]},"eventTime":1657382620169,"message":"Compiled hangman","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/msi/Desktop/Hangman/#hangman/Compile"},"errors":0,"warnings":0,"time":470}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"running (fork) ch.makery.hangman.MainApp "})[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 9 s, completed Jul 10, 2022 12:03:48 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

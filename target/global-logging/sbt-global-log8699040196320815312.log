@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: initialized: JsonRpcNotificationMessage(2.0, initialized, {})[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: textDocument/didOpen: JsonRpcNotificationMessage(2.0, textDocument/didOpen, {"textDocument":{"uri":"file:///c%3A/Users/msi/Desktop/Hangman/src/main/scala/ch/makery/hangman/view/HangmanGameController.scala","languageId":"scala","version":1,"text":"package ch.makery.hangman.view\r\n\r\nimport ch.makery.hangman.MainApp\r\nimport scalafxml.core.macros.sfxml\r\nimport scalafx.Includes._\r\nimport scalafx.event.ActionEvent\r\nimport scalafx.scene.control.Alert.AlertType\r\nimport scala.util.{Failure, Success}\r\nimport scalafx.scene.image.{Image, ImageView}\r\nimport scalafx.scene.media.{Media, MediaPlayer}\r\n\r\n@sfxml\r\nclass HangmanGameController(hangmanImage: ImageView) {\r\n\r\n    var counter = 1;\r\n    private val imageList = List(\"file:resources/images/wrong1.png\", \"file:resources/images/wrong2.png\", \"file:resources/images/wrong3.png\", \"file:resources/images/wrong4.png\", \"file:resources/images/wrong5.png\")\r\n\r\n    hangmanImage.image = new Image(imageList(counter-1))\r\n    hangmanImage.setVisible(false)\r\n\r\n    def testVisible(action: ActionEvent): Unit = {\r\n        counter += 1\r\n        hangmanImage.image = new Image(imageList(counter-1))\r\n        hangmanImage.setVisible(true)\r\n    }\r\n}"}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (C:\Users\msi\Desktop\Hangman\target\scala-2.12\zinc\inc_compile_2.12.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jul 13, 2022 12:36:10 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

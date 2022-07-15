@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: initialized: JsonRpcNotificationMessage(2.0, initialized, {})[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: textDocument/didOpen: JsonRpcNotificationMessage(2.0, textDocument/didOpen, {"textDocument":{"uri":"file:///d%3A/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/src/main/scala/ch/makery/address/MainApp.scala","languageId":"scala","version":32,"text":"import scalafx.application.JFXApp\r\nimport scalafx.application.JFXApp.PrimaryStage\r\nimport scalafx.scene.Scene\r\nimport scalafx.scene.image._\r\n\r\nobject MainApp extends JFXApp{\r\n    stage = new PrimaryStage(){\r\n        title = \"Hangman\"\r\n        icons += new Image(\"file:resources/images/hangman.png\")\r\n        scene = new Scene(900,850) {\r\n            val img = new Image(\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/IU_for_Chamisul_advertising_campaign_2020_07_%28cropped%29.png/330px-IU_for_Chamisul_advertising_campaign_2020_07_%28cropped%29.png\")\r\n            val view = new ImageView(img)\r\n            content = view\r\n        }\r\n    }\r\n}\r\n\r\nobject main {\r\n    def main\r\n}\r\n"}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (D:\Computer Science\Semester 6\Object Oriented Programming\Assignment\Final Assignment\Hangman\target\scala-2.13\zinc\inc_compile_2.13.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Jul 7, 2022 2:22:13 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="881.0" layoutX="-14.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://media.istockphoto.com/photos/black-wooden-wall-background-texture-of-dark-bark-wood-with-old-for-picture-id901751196?b=1&k=20&m=901751196&s=170667a&w=0&h=PqoCe-iR8t_MHf3kRcqQgOBcwPNR-B6Tcyo5Ei5tJ78=" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

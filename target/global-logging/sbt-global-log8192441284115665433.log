@@ -1,0 +1,31 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"4","parents":[]},"eventTime":1657213576993,"message":"Compiling hangman","dataKind":"compile-task","data":{"target":{"uri":"file:/D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to D:\Computer Science\Semester 6\Object Oriented Programming\Assignment\Final Assignment\Hangman\target\scala-2.13\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to D:\\Computer Science\\Semester 6\\Object Oriented Programming\\Assignment\\Final Assignment\\Hangman\\target\\scala-2.13\\classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/src/main/scala/ch/makery/address/MainApp.scala"},"buildTarget":{"uri":"file:/D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/#hangman/Compile"},"diagnostics":[{"range":{"start":{"line":11,"character":27},"end":{"line":11,"character":36}},"severity":1,"source":"sbt","message":"not found: type ImageView"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Computer Science\Semester 6\Object Oriented Programming\Assignment\Final Assignment\Hangman\src\main\scala\ch\makery\address\MainApp.scala:12:28: not found: type ImageView[0m
+[0m[[0m[31merror[0m] [0m[0m            val view = new ImageView(img)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"D:\\Computer Science\\Semester 6\\Object Oriented Programming\\Assignment\\Final Assignment\\Hangman\\src\\main\\scala\\ch\\makery\\address\\MainApp.scala:12:28: not found: type ImageView"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"            val view = new ImageView(img)"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"                           ^"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"4","parents":[]},"eventTime":1657213577182,"message":"Compiling hangman (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskProgress, {"taskId":{"id":"4","parents":[]},"eventTime":1657213577183,"message":"Compiling hangman (15%)","total":26,"progress":15,"dataKind":"compile-progress","data":{"target":{"uri":"file:/D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/#hangman/Compile"}}})[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"one error found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/src/main/scala/ch/makery/address/MainApp.scala"},"buildTarget":{"uri":"file:/D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/#hangman/Compile"},"diagnostics":[{"range":{"start":{"line":11,"character":27},"end":{"line":11,"character":36}},"severity":1,"source":"sbt","message":"not found: type ImageView"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"4","parents":[]},"eventTime":1657213577187,"message":"Compiled hangman","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/D:/Computer%20Science/Semester%206/Object%20Oriented%20Programming/Assignment/Final%20Assignment/Hangman/#hangman/Compile"},"errors":1,"warnings":0,"time":194}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Jul 8, 2022 1:06:17 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled request received: shutdown: JsonRpcRequestMessage(2.0, ♨1, shutdown, null})[0m
