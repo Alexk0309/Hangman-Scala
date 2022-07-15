@@ -12,6 +12,7 @@ import scalafx.scene.control.{Button}
 import scalafx.scene.text.Text
 
 @sfxml
+// Controller for HangmanGame.fxml
 class HangmanGameController(
     hangmanImage: ImageView,
     qKey: Button,
@@ -43,7 +44,7 @@ class HangmanGameController(
     hangmanText: Text
     ) {
 
-    // generate random word 
+    // Assign variables and instance that will be used for the game  
     var hangmanWord = new Word("src/main/randomWords.txt")
     var wordList: List[String] = null
     var word: String = null
@@ -54,6 +55,7 @@ class HangmanGameController(
     var counter: Int = 0
     var remain: Int = 0
 
+    // A function to generate random words from the text file 
     def generateWord(): Unit = {
         wordList = hangmanWord.wordList()
         word = hangmanWord.selectWord(wordList)
@@ -62,7 +64,10 @@ class HangmanGameController(
         placeholder = hangmanWord.generatePlaceholder(wordSize)
     }
 
+    // A function to check the input for correct answer of the letter
    def checkAns(input: Char): Boolean = {
+    // If returns true, loop through the word to see if letter exists in the word 
+    // Will update the blank spaces with the correct letter 
     if (hangmanWord.checkWord(input)) {
         for (i <- 0 to wordSize-1) {
             if (charList(i) == input) {
@@ -72,11 +77,13 @@ class HangmanGameController(
         }
         text = placeholder.mkString(" ")
         hangmanText.setText(text)
+        // If the word is guessed correctly, will display a dialog to congrulate the player 
         if (remain == 0) { 
             MainApp.showWonGame()
         }
         return true
     }
+    // If the letter is guessed incorrectly, a body piece of hangman will appear on the screen
     else {
         if (counter == 0) {
             hangmanImage.setVisible(true)
@@ -85,7 +92,9 @@ class HangmanGameController(
             hangmanImage.image = new Image(imageList(counter))
             hangmanImage.setVisible(true)
         }
+        // Update the counter
         counter += 1
+        // If hangman is fully shown, game will terminate and display a game over dialog 
         if (counter == 5) {
             MainApp.showGameOver(word)
         }
@@ -93,18 +102,28 @@ class HangmanGameController(
     }
    }
 
+   // Calling function to generate random word 
    generateWord()
 
+   // Setting blanks according to the number of letters in the word 
    text = placeholder.mkString(" ")
    hangmanText.setText(text)
 
+   // Counter to count the number of incorrect guesses 
    counter = 0
+   // remain; a variable to count the number of letters left to guess correctly 
    remain = wordSize
+   // A list that stores the file paths of the images of hangman 
    private val imageList = List("file:resources/images/wrong1.png", "file:resources/images/wrong2.png", "file:resources/images/wrong3.png", "file:resources/images/wrong4.png", "file:resources/images/wrong5.png")
-
+   // Set image to imageView according to the counter 
    hangmanImage.image = new Image(imageList(counter))
+   // Set image to not be visible when the game starts 
    hangmanImage.setVisible(false)
 
+   // Functions for every keys in the game 
+   // If letter is guessed correctly, will replace the blank with the correct letter o nthe screen
+   // Button will not be visible after button is pressed and guessed correctly 
+   // Otherwise, will display a body piece of hangman 
    qKey.onAction = (e: ActionEvent) => {
     if (checkAns('Q')) {
         qKey.setVisible(false)
@@ -261,10 +280,12 @@ class HangmanGameController(
     }
    }
 
+   // Button in menubar 
+   // Button to go back to the main menu
    def goHome(action: ActionEvent): Unit = {
     MainApp.showHomeScreen()
    }
-
+   // Button to terminate the program and exit the game 
    def exitGame(action: ActionEvent): Unit = {
     System.exit(0)
    }
