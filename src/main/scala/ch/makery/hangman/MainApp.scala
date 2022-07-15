@@ -37,6 +37,7 @@ object MainApp extends JFXApp{
     // Disable stage resize 
     MainApp.stage.setResizable(false)
 
+    // Function to display home screen on stage 
     def showHomeScreen(): Unit = {
         val resource = getClass.getResource("view/HomeScreen.fxml")
         val loader = new FXMLLoader(resource, NoDependencyResolver)
@@ -45,6 +46,7 @@ object MainApp extends JFXApp{
         this.roots.setCenter(roots)
     }
 
+    // Function to display instructions on stage 
     def showRule(): Unit = {
         val resource = getClass.getResource("view/HangmanRule.fxml")
         val loader = new FXMLLoader(resource, NoDependencyResolver)
@@ -53,6 +55,7 @@ object MainApp extends JFXApp{
         this.roots.setCenter(roots)
     }
 
+    // Function to start game 
     def showGame(): Unit = {
         val resource = getClass.getResource("view/HangmanGame.fxml")
         val loader = new FXMLLoader(resource, NoDependencyResolver)
@@ -61,6 +64,7 @@ object MainApp extends JFXApp{
         this.roots.setCenter(roots)
     }
 
+    // Open up a new dialog to congratulate user for winning  
     def showWonGame(): Unit = {
         val resource = getClass.getResource("view/HangmanWin.fxml")
         val loader = new FXMLLoader(resource, NoDependencyResolver)
@@ -76,14 +80,20 @@ object MainApp extends JFXApp{
                 root = roots2
             }
         }
+        // Updates the score when player guessed a word correctly 
         score += 1 
+        // Update the text in the scene 
         control.scoreDisplay.setText(score.toString)
         control.dialogStage = dialog
         dialog.setResizable(false)
+        // Disable minimise, maximise, and close button 
         dialog.initStyle(StageStyle.UNDECORATED)
+        // Dialog needs to be interacted before interacting with the main window 
         dialog.showAndWait()
     }
 
+    // Open up a new dialog when player lost 
+    // Argument: answer as string variable, to display the answer in the dialog
     def showGameOver(answer: String): Unit = {
         
         val resource = getClass.getResource("view/HangmanGameOver.fxml")
@@ -101,12 +111,17 @@ object MainApp extends JFXApp{
                 root = roots3
             }
         }
+        // Update text on scene to display score and answer 
         control.scoreDisplay.setText(score.toString)
         control.answerDisplay.setText(answer)
         control.dialogStage = dialog2
+        // disable minimise, maximise, and close button 
         dialog2.initStyle(StageStyle.UNDECORATED)
         dialog2.setResizable(false)
+        // Dialog needs to be interacted before interacting with the main window 
         dialog2.showAndWait()
     }
+
+    // Display the home screen when the program runs 
     showHomeScreen()
 }
